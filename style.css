@@ -21,7 +21,7 @@
 }
 
 .menu-hamburger {
-    --_size: 1.6rem;
+    --_size: 3rem;
     height: var(--_size);
     width: var(--_size);
     display: flex;
@@ -74,7 +74,7 @@
     bottom: 0;
     padding: 2rem;
     width: var(--menu-width);
-    backdrop-filter: blur(1.5px);
+    backdrop-filter: blur(2px);
     transition: transform .3s;
     transform: translateX(-100%);
 
@@ -86,7 +86,7 @@
 
 .main-menu a {
     display: block;
-    color: rgb(20, 8, 31);
+    color: rgb(181, 170, 190);
     text-decoration: none;
     background-color: rgba(28, 9, 53, 0.5);
     padding: .5rem;
@@ -116,6 +116,8 @@ body {
 }
 
 header {
+    background-image: url("bg.jpg");
+    
     border: 1px solid rgba(22, 5, 41, 0.514);
     height: 100px;
     background-color:rgba(148, 122, 172, 0.692);
@@ -131,13 +133,21 @@ header:hover{
 main {
     border: 1px solid rgb(18, 5, 20);
     min-height: calc(100dvh - 200px);
-    background-color:rgb(18, 5, 20);
+    background-color:rgb(86, 66, 88);
     color: white;
     
 }
 
 h2{
-    margin: 3% 5% 0 0;
+    margin-top: 2%;
+    margin-block-end: 4%;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 
@@ -155,6 +165,7 @@ h2{
     transition: 0.5s;
     margin: 2% 1% ;
     border-radius: 20%;
+    
 }
 
 .bt-dialog:hover{
@@ -164,7 +175,6 @@ h2{
 }
 
 .bt-modal{
-    position: relative;
     background-color: rgb(18, 5, 20);
     color: rgb(238, 234, 234);
     text-decoration: none;
@@ -189,6 +199,15 @@ h2{
     position: absolute;
     inset: 2px;
 
+}
+
+.imgarticle {
+   width: 20%;
+   float: right;
+   margin: 5%;
+   padding: 10px;
+   border-radius: 20px;
+   border: solid 2px rgb(65, 12, 65);
 }
 
 footer {
@@ -258,5 +277,5 @@ dialog:modal .action {
 
 dialog:modal::backdrop {
     backdrop-filter: blur(2.5px);
-    background-color: rgba(0 0 0 / .9);
+    background-color: rgba(145, 143, 143, 0.9);
 }
